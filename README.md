@@ -1,3 +1,7 @@
+![GitHub stars](https://img.shields.io/github/stars/EremosCore/Eremos?style=social)
+![GitHub forks](https://img.shields.io/github/forks/EremosCore/Eremos?style=social)
+![License](https://img.shields.io/github/license/EremosCore/Eremos)
+
 # Eremos
 
 ![Eremos](docs/banner2.png)
@@ -5,7 +9,7 @@
 **Autonomous swarm agents for early on-chain signal detection**
 
 Eremos is a lightweight framework for deploying modular agents that monitor blockchain activity - tracking wallet clusters, mint patterns, and contract anomalies.
-Designed for devs who want low-noise, early signals embedded into their workflows.
+Eremos is for developers who want early, low-noise signals directly in their workflows.
 
 ---
 
@@ -29,7 +33,7 @@ Modular and extendable by design.*
 - **Signal Emission** - Structured signals for logging, alerting, or downstream use  
 - **Swarm Design** - Each agent operates independently with shared utilities  
 - **Extensible Core** - Plug in watchers, inference layers, or custom triggers  
-- **Minimal Output** - Log only what matters
+- **Minimal Output** – agents log only the important events
 - **Launch Wallet Detection** - Agents can trace freshly funded wallets (e.g. from CEXs), track their contract interactions, and flag high-confidence deploys in real time
 - **Ghost Watcher** - Monitors long-dormant wallets that suddenly become active again. Useful for tracing old dev wallets or rug setups.
 - *+ More to come.*
@@ -111,9 +115,23 @@ npm run dev
 
 ## Contributing
 
-We’re open to contributors.  
+We welcome contributions of any size - code, docs, or ideas. Every improvement helps the swarm grow!  
 If you are experienced in TypeScript and like agent-based systems, check `example.ts` and build your own observer.
 If you're a designer, artist, or just have ideas that fit the mythos - send us a DM on Twitter. [@EremosCore](https://x.com/EremosCore)
+
+---
+
+## How Swarm Agents Work
+
+Solana Blockchain
+       │
+       ▼
+ [Agent-000] ─► Tracks wallet clusters
+ [Agent-001] ─► Tracks mint patterns
+ [Agent-002] ─► Detects contract anomalies
+       │
+       ▼
+    Insights / Alerts
 
 ---
 
